@@ -1,0 +1,1 @@
+export const CON_ADDR = '0xD2B03cd0170f9cd63Be43C27d18028487df78360';
