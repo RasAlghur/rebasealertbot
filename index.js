@@ -83,36 +83,6 @@ contract.on('LogRebase', async () => {
     }
 });
 
-// bot.command('heee', async (ctx) => {
-//     try {
-//         const rebC = await contract.rebaseCount();
-//         const toSUp = await contract.totalSupply();
-//         const nextRebaseTime = await contract.nextRebaseTimeStamp();
-//         const formattedTime = new Date(parseInt(nextRebaseTime) * 1000).toDateString();
-
-//         const rebasePercent = 10;
-//         const coS = toSUp;
-//         const toS = formatUnits(coS, 9);
-
-//         const alertMessage = `
-//         🚀 *That Rebase Stimuli just hit Baby!!!* 💵
-//         New Rebase Stimuli from the Federal Reserves of $BASEG
-
-//         📈 *Rebase Epoch:* ${rebC}
-//         💰 *New Supply:* ${toS}
-//         📊 * Today's Rebase %:* ${rebasePercent}%
-
-//         🕒 *Next Rebase:* ${formattedTime}
-//         `;
-
-//         const gif = fs.readFileSync('./Rebase.mp4');
-
-//         await bot.telegram.sendAnimation(testChatId, { source: gif }, { caption: alertMessage, parse_mode: 'Markdown' });
-//     } catch (error) {
-//         console.error('Error handling LogRebase event:', error);
-//     }
-// });
-
 bot.command('rebasecount', async (ctx) => {
     try {
         if (ctx.chat.type !== 'supergroup' && ctx.chat.type !== 'group') {
