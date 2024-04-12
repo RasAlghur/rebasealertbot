@@ -1,0 +1,7 @@
+.vercel
+node_modules
+.env
+api
+fetchid.js
+netlify.toml
+Procfile
